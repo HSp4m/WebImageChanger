@@ -16,6 +16,6 @@
           "js": ["./main/content.js"]
         }],
     "icons": {
-        "48": "./images/logo48.png"
+        "48": "./main/logo48.png"
     }
 }
