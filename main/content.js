@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
           func: (newimage,delet,replace) => {
             const images = document.querySelectorAll("img");
          
-            console.log(newimage);
-            console.log(delet);
-            console.log(replace);
+            
             if(replace && !delet) {
               images.forEach((img) => {
                 
