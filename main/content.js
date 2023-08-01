@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                });
             } else if(!replace && delet) {
               images.forEach((img) => {
-                img.src = "";
+                img.src = null;
                });
             }
             else if(replace && delet) {
