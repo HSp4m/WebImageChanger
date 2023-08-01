@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
           func: (newimage,delet,replace) => {
             const images = document.querySelectorAll("img");
          
-            
+            try{
             if(replace && !delet) {
               images.forEach((img) => {
                 
@@ -31,7 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
               alert('Choise one method');
             }
             
-          },
+          }
+          catch(err) {
+            alert(err);
+          }
+        }
+          ,
           args: [newimage,deleteInput,replaceInput], 
         });
       });
